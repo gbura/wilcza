@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Wilcza przełęcz - przełęcz w południowo-zachodniej Polsce, w Sudetach Środkowych, w Grzbiecie Zachodnim pasma Gór Bardzkich.">
+  <link rel="icon" href="/wilcza/assets/logo-green--FqCN0Sh.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <title>Wilcza Przełęcz</title>
+  <script type="module" crossorigin src="/wilcza/assets/index-ZCLb1a0T.js"></script>
+  <link rel="stylesheet" crossorigin href="/wilcza/assets/index-ggE63lM2.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="wrapper">
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html"><img src="/wilcza/assets/logo-white-wJlLrDqX.png"
+                alt="Obrazek szczytu gór z napisem Wilcza Przełęcz"></a>
+          </div>
+          <button class="hamburger hamburger--spring" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div class="header-info">
+            <div class="phone-box">
+              <img src="data:image/png;base64,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" alt="" class="header-icon">
+              <p class="header-text">723 990 660</p>
+            </div>
+            <div class="mail-box">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABzCAYAAACrQz3mAAAACXBIWXMAAC4jAAAuIwF4pT92AAAIKUlEQVR4nO2da6xdRRmGXwhyqUUOIJVS/gjh6o8mRoNFZA9YU4RUIMgl3BIu4o2KAoKYaA8IEVKKyi3IJVBsuFPCLUIDriFSrPaH/iMo8McCUltaLtrWhG4zJ7PhnPXOXutbe932nvM9yfSk71qzLvOeb7519p6ZtV2324USB9urj/GgZkaEmhkRamZEqJkRoWZGhJoZEWpmRKiZEaFmRoSaGRFqZkSomRGhZkaEmhkRamZEqJkRkWmmtfYiANsAdLUMRdlmrb2UjPJkmglgdwDbkaq0hfNirO+53RigrJIkyZVdZShIkuSaLK9EA7qstVcZY35GG5Qmye0hRQ9AxpifW2uvpg1KI1hrr5Wcp+hQy+sAXEaqUieuzX8iOf5EZFprFwHYSluZywEsIVWpi+uFRm6Z+Ncnz49IkmRhKLmmyhJ9JKqdULtPKUmSHNe7iMWLF59HZnqoYqAspVpKVdwQaO+0kV9PnWtVL2emE6cL210omJlfA7iIVKUMrk1/JKif9mxzPzOLGPobAD8gVRmEWwBcKKj335A3WX+a7OxMttYeQ1um4iLzJlKVQhhjts8z0lr7NR94ZOQEfXLmIDn0RqqlSLk10J7pHDk/71hZ3exkXFh/klTmJmE3oXzMbQC+K2iP3A8EsrrZycwA8B9SGff36m9JVfpxu9DID0gJUOT7zBk+hx5NW6byHX+RSgY+R367/x4TObLjI1LSK4pz5iA59HaqpfS4K9Be6RzZKdpa0pyZxoX9rqQyLkK/Rer05m4A50rijJQcBh02MhPA+6QyFwC4k9Tpyz1CI98jRUCZMUAzfQ49grZMxUXmMlKnGcaYHQCck3XX1trDfURKej1mwJyZhvr8QFlGtaYPywPtkc6R88q2xqA5M43rcj9FKnMvgLNIjZv7AJwhiStSClLVUEvXLWwilTkbwO9IjRepkRtJGYAqx83u5nPoYbRlKs7QB0iNDGPMJ/KMtNZ+wUdk/xF3Baiqm00jGZ7pDD2V1Dh4BMDJWXfijDTGrKENJajLzE1+zG0eMRr6KIBvkspUvs5dXdMTxoR54DQAD5E6ukiNfIeUCqhzrsmYz6Gfpy1TcZH5GKkjhjFmxzwjrbVzfURKeq3C1NXNppHk0BUATiR1NHgCwPFZV+qMNMb8jTZUSFNmbgDwaVIZF6EnkDrcPAngG4IrrH0t2Kam9O0JYD2pjIvMx0kdXqRG/puUGmgqMiff1CxSmVFY0fgpAAtJZd4W3nNpmp5su5fQKJdjnyZ1eHgmz0hr7aH+XhsxEi1EZo91AD5DKuMMPZbUdnkWQN6IRbTRu7Q1DX6W737yOA7A73P2aRKpkW+R0gBtRWYPaYQOQw5dCWABqYwzcm9SG6DtBSpmFcihK0ltjufzjLTWHujvpRUjMQSR2cP9Nu9DKvMcgK+SWi/OyPmCM7TeewzL0jGzAbxBKjPfN25TJEIj15LSAsMSmT3eBDCHVKaJ67UAjiKV+SeAfUltgVFd1Mnl0D+QWh0vCI0cKoYpMqV5czKu0Y8ktRwvAvhKwSOsFfYotTJqD0AhqjR0FYC8oaP90Acgz6BGOtx8jD+SWpyXShjp/jQ5iMSGadvMdRUt5+Yi80VS5fwJwJez9jbGZHajxpi/+3v5F21siDa72SKfzx4CYD/awrjomkdqNn8BkDeiEL6Ninyc1/iHB21FZtEP2j8L4HXayrjh/atJ7Y/UyFf9zwX+G5M8Zudsr4W2zJQY+VTqGxNn6Gu0FzNPaOgaoZH/ALD/pP8vkHz4b639HIl1U9FcEynrQvMsAiWPUJ10WZ1xjDWB/aeUTqczh2pN5clQvUB5m2rWRJM5c73/cjoPyTggFy0Hksq4B5svpdQ/B7QQkjYpMmxEMgaqFE11sxuERq4QDug6AMArpDLzxsfHx/wadNcbY8aERr5MSpiFfmReHpJ7L09D3Wyo+0mXFVQrn1cCxylbXh7gOh4XTNmbS7Uqpm4zN4RuLFBK0el0ZgeOWah0Op29S17Go8LzraeaFVFnzpTON3kQwCmkFqfshw9VtEGR6QmVj2qvK2c2baRDmudClKk7mZOEc2f2IKUC6jJTYuT9FRrpONit7GiMEUeo33eLr1sVbirfw3nHstZ+kcSyVJwzNwVyRKjUTpIkFwfO23sY+XEDl3Bf6NyBspFqDkiVOfNd4Qzg6bSuQZFp8KVnT+sCFfUzcgtUSIxcNg2NdJwOYDmpKfwaQKUoG5nSZddGYSJQ3SwX/jK/KwwOokxkSo28g5TpyZl+3bw8dhMuZUfoQojNM3QLIaqRg+PWz7srr7a11pCYQ9HIlC7vrTkyH2fo+YL9PpAuHlwkMqVG3kaKEuI84RLoM4VLqosjUxfcr4/GF9xXI+vDrWl/a97R/TtNMsmLTOlbh/rVV+Q4Q78v2Dv4tiHkRGaR10cp5fkegJsFR3FvsdhMaoaZUiNv0PeAVYqLzF8JDjiDFGBzPzMlRi4Rvk1OKcYPfZBkYq1Nr8Ly117O/NBH6f8A7JR1EI/myPpxhl4iOIvrRXcaHx+f0/uydlG3290a+OI0VK5r4stlZYKlgfYPlS1d6av9J3Gtf++00hxLAVwqOVu/nElYa3+hRrbCJdbaX0pOLI1MzZEt4ww1xvw06ypyI9NaeyWJSuMYY66w1l6Ted5AMp08im1cn0OGiyRJrg555UpeZG7ULnao6Ga9DKjo06wyxIzqok5KADUzItTMiFAzI0LNjAg1MyLUzIhQMyNCzYwINTMi1MyIUDMjQs2MCDUzItTMiFAzYwHA/wGP5n1+c7aJiQAAAABJRU5ErkJggg==" alt="" class="header-icon">
+              <p class="header-text">biuro@wilczaprzełęcz.pl</p>
+            </div>
+            <a href="#form" class="form-btn">formularz<br> kontaktowy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-container">
+      <div class="wrapper wrapper-nav">
+        <nav class="nav">
+          <div class="indicator"></div>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#localization-section">lokalizacja</a>
+            </li>
+            <li class="menu-item">
+              <a href="#attractions-section">atrakcje w okolicy</a>
+            </li>
+            <li class="menu-item">
+              <a href="#plot-description-section">zalety działek</a>
+            </li>
+            <li class="menu-item">
+              <a href="#plot-map-section">mapa rozmieszczenia działek</a>
+            </li>
+            <li class="menu-item">
+              <a href="#gallery-section">galeria</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+  </header>
+
+  <main>
+    <section class="main-page-section" id="main-page-section">
+      <div class="wrapper">
+        <h1 class="main-page-header">REKREACYJNE<br> <span class="main-page-span">DZIAŁKI BUDOWLANE</span></h1>
+        <div class="buttons">
+          <a href="#plot-map-section" class="main-btn plot-map-btn">mapa działek</a>
+          <a href="tel:723 990 660" class="main-btn contact-btn">kontakt</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wolf-pass-section" id="wolf-pass-section">
+      <div class="wrapper">
+        <div class="wolf-pass-content">
+          <div class="img-container">
+            <img src="/wilcza/assets/logo-green--FqCN0Sh.png" alt="Obrazek szczytu gór z napisem Wilcza Przełęcz">
+          </div>
+          <div class="wolf-pass-text-container">
+            <h2 class="title">wilcza przełęcz</h2>
+            <p class="wolf-pass-text">Działki zlokalizowane są w malowniczej miejscowości Wilcza, położonej na Dolnym
+              Śląsku, oferują doskonałą harmonię między wiejskim spokojem, a górskimi atrakcjami. Otoczone zielenią
+              lasów
+              i górskich szlaków, te działki zapewniają idealne warunki dla miłośników przyrody i aktywnego trybu życia.
+            </p><br>
+            <p class="wolf-pass-text">Zlokalizowane w sercu Gór Sowich, ten obszar gwarantuje nie tylko urokliwy
+              krajobraz, ale także możliwość korzystania z licznych szlaków turystycznych oraz stoków narciarskich. To
+              idealne miejsce dla tych, którzy pragną cieszyć się ciszą wiejskiego życia, jednocześnie mając dostęp do
+              bogactw górskiego środowiska.</p>
+          </div>
+        </div>
+      </div>
+      <div class="wolf-pass-localization">
+        <img src="/wilcza/assets/wilcza-road-HMjhDDTP.png" alt="Mini mapa z lokalizacją Wilczej">
+      </div>
+    </section>
+
+    <section class="localization-section" id="localization-section">
+      <div class="wrapper title-wrapper">
+        <h2 class="title">gdzie jesteśmy?</h2>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81164.14794835182!2d16.59684647984484!3d50.527108932816006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e3c3d05938589%3A0xdb436fb254b644ea!2zUHJ6ZcWCxJljeiBXaWxjemE!5e0!3m2!1spl!2spl!4v1707390161999!5m2!1spl!2spl"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="attractions-section" id="attractions-section">
+      <div class="wrapper title-wrapper">
+        <h2 class="title">atrakcje w okolicy</h2>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero-img hero-img-one">
+              <div class="hero-text">
+                <h3 class="hero-title">twierdza srebrna góra</h3>
+                <p class="hero-subtitle">Atrakcja dla każdego</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-img hero-img-two">
+              <div class="hero-text">
+                <h3 class="hero-title">górskie szlaki w okolicy</h3>
+                <p class="hero-subtitle">Śnieżnik, Kłodzka Góra, Jagodna, Czarna Góra, Szczeliniec Wielki</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-img hero-img-three">
+              <div class="hero-text">
+                <h3 class="hero-title">spływy kajakowe oraz pontonowe</h3>
+                <p class="hero-subtitle">Bardo</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-img hero-img-four">
+              <div class="hero-text">
+                <h3 class="hero-title">trasy rowerowe typu singletrack</h3>
+                <p class="hero-subtitle">Ponad 250 km tras rowerowych</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-img hero-img-five">
+              <div class="hero-text">
+                <h3 class="hero-title">trasy enduro</h3>
+                <p class="hero-subtitle">Srebrna Góra</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-img hero-img-six">
+              <div class="hero-text">
+                <h3 class="hero-title">trasy narciarskie</h3>
+                <p class="hero-subtitle">Zielniec, Czarna Góra</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="plot-description-section" id="plot-description-section">
+      <div class="wrapper title-wrapper">
+        <h2 class="title">opis działek</h2>
+      </div>
+      <div class="wrapper">
+        <div class="plot-boxes">
+          <div class="plot-box">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABlCAYAAABUfC3PAAAACXBIWXMAAAsSAAALEgHS3X78AAAEp0lEQVR4nO2czWpbRxiGP0lHFWmgdhsoJdTUFNpmUXAQBGpisBaCLttcQe07yFqLkHqhZckd2L0DX4AWIoRmERDOIpC0pXFwyE9bhyTQ1LYsq3zKOMgaHen8zBy9ct8HBGZGln3m0Tcz38yck+t2u0KwyNMHHpQCCKUAQimAUAoglAIIpQBCKYBQCiCUAgilAEIpgFAKIJQCCKUAQimAUAoglAIIpQASnIaLqDfKFfPjdq3a2rbeMGVM3cGJeqM8LyIrIqIilq03vOWuiDT1Vau2Nq1acKZGiomG6yNEhPFIf69WbW2E1MMBL6XeKM+KiDbod1ZlPDR6VmrV1lbW1xAXaCn1RvmiiGj385lVmZxV9KiBlWKE6LgwY1WmB1oM5JTYsxBlvd4or1ilIKDmKRsehRxzw8iHA05KvVHWGdaCVeEelX4j6+uLAtSYYnKQh1aFX+DGF7RIuWqVnM6/ORI0Kd9bJW7QBPKKyVUGWUAbW2CkmIZxmY8c80plm+WWsDHE15chEUiR4qNhVEhFs3gjPUxKxSqZIEhS5q2SdAwKGZX3sPsKwaWUOEJkTF3mnMZNrn4hsxklok6ZJik6c/rZKrVZ6RPSzCgRdco0SdEZlK5XrZpoGIYmgpvTLETApDStkpNc18Y22XdliJheZp5QyLD8ZWIgSRm3t/6DNrYRs2VmTMeNmUaIArXxhSQlyl66Nva2zqjMAQmNmCt9a1ebCbuscVGaKWgLktqoUbZ9teu62r+QWG+UN0w0xUU/a75Wbb30dmExQRvoo67WzpiNKl3mTyNE2UQSIojbwfVGuRnzxMqjFGtmGiUX0c6KOZeyuLZUSbOWdP5cp/LFp+3lD84eWXUuaR/m5NfHxecv/j7Ye7NfuHOQK91L8PHN29duOR+PnEpZXFvSPGLdqojJmVL3aHlhL18M/EXxnfslefaiYJUnYPX2tVtON8mcjSmuhCj/7ufyv9wr9b7NPtj6/T1XQpR1c+3OcCLFpZBu52239fqfvPgQo0J2/nR+hNqpmNTdl0shwygWunLpwoGcm+kMqY3Om/2cbP1Wkt3XXiecTrqyVFJ8C+ln7uND+XKuLe+X4v2/Gml/PA3k4ZNA2h0/3eEAqcUklpKlkH4++ajz7jVqIrD7qiA7fxXk2W4hKxn9pBKTSMqkhAyi0+ZiQWTm7JEEQbcnQvHcRUUlsZjYUlCETAmJxMT6SlFIbBLNyiJLoZDExBYTSQqFpCaWmLFSKMQZkcWMHOgX15Z83yfyf2Ts4B8aKRTijbERM1QKhXhnpBhLCoVkRqiYE1IoJHOGinknhUImhiWmJ4VCJs4JMblvfrxMITj0pssqJe7pEeKXD/OFglxmI+Pw+fnDb4Olr/eCBztFb4cUSHS+mmvrtvfzQDeKLl3YZ9MBYSWPZPJQCiCUAgilAEIpgFAKIJQCSH7IXbZkwuRHPESGZM/dWrXV7B2cMA+5dP3AmjB0VXo2pG6Ql55vp0Z6etFNEflJ778ceZqFTAYO9IBQCiCUAgilAEIpgFAKIJQCCKUAQimAUAoglAIIpQBCKYBQCiCUAgilAEIpgFAKIJQCCKWgISL/AaraqRhj5EZ6AAAAAElFTkSuQmCC" alt="" class="plot-icon">
+            <p class="plot-text">Działki kompletnie uzbrojone</p>
+          </div>
+          <div class="plot-box">
+            <img src="data:image/png;base64,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" alt="" class="plot-icon">
+            <p class="plot-text">Działki objęte miejscowym planem zagospodarowania przestrzennego pozwalającym na budowę
+              domu całorocznego</p>
+          </div>
+          <div class="plot-box">
+            <img src="data:image/png;base64,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" alt="" class="plot-icon">
+            <p class="plot-text">Zagwarantowany dojazd do posesji utwardzoną drogą</p>
+          </div>
+          <div class="plot-box">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABlCAYAAABUfC3PAAAACXBIWXMAAAsSAAALEgHS3X78AAAOHUlEQVR4nO2dCXAb1RnHP2lXtyX5PkIu2yF24iOxc5FJSKDjKTTQgekwwDBMgRZCCGlJoRDigUBSMEMz4SqkMECBljalpeVqCc0YJjAhkJAodpzDdogd2+Rw4lOypb2382TJkf1Wl7UraxX9Zjweve/t2tq/vnd933vSiKIIKaLn2o3F6/opI7/v+aN/lPvxpUSZAMsfq2Z4vVmXl8lBdx/5IgA8+c2mPQNy3V+LlaQIyezbZ32CBEF1LvQR6NcDANCwdMvyq0JdFw0pT4mShRsXizqTXvKidBPT9kO758am7U1NmDEKUp4SBQs2LDoVTBCNRoQBj74o18q8gxmjJCVKhFSuq7xJbzHMCFZbFDXe30OsfipmjBJyEt+nqjBlpu0I9//STkpwPNeUixmiJOUpEVD98MLDWlIb9gM8cOpCLVY4AVKihGH++qplBquxInQtAJKAV9ve73gWM0yAVPMlQV199XoAWAcAU1dcQeg6zvPQ4yRAEPC6Pro4HjZipRMkJco46uqrDyEH8ZfmZwuQn00DLwB0nifhSBs++vJ0dh9oeOOEbJPH1DwlgLr66mcA4FHMEMAwpYG9RwxAMSMtP0exw9/V7UvDKsbAJekpJT+fvVxLaq8j9ORSf5ley7f/ZJX5Dosx9IcU2a+uouHLRiO4KQ1QA+6lWKUYuaQ8Zc4vSp8xZljWGO2mdMzow2YRoKiAg2m5HGYLxOnWQuMxsXnnowfnYMYYuSREmX375TMsebaGUGKMB4lTPpOFLDuP2QKga2scRqw0RpJ+SFx6R8ktGUXZ7dEIgnAOa2HvUQMcbdcDy2kwuw8DViIDSS0K8hD7jMwdWpII+lTD0XaW9PYfvYNEmJrykdSioCYrFkH8eGiN12u+azaM95rQHc8ESVpRyu8r/1u0TVY4zvURXnEChPk6zCUTIilF8XbsOdZbMYMM+PsahtUgL7lRib+RlPMUc1bat3I0W8FAwuzao2H2Pn1Qtll8IEnnKWWryx4zZVnyMYPMiAajefbtlz+mxL2TShTUbJmz057ADAphybM9pMSdk0oUg834IWnUxa1JRgMJtGSDGWIkaUQpvatkfVq+fT5mUBhCT94p919IGlGsBemyBJiiRUtqZ8l+T6xEhZSvKd9NGnV4oEOlqF6UstVlq6xT0ldiBhWjynlKXX11JQCg/KqZK1aYrG3dgnfukCyoThSfIA0o7IBeT8sXYFo+Be1nSWjp0oVa0VUEZoiul/u+avx4fe4XBAnA8SMiFBZwULOAgoJMLnh6gzL8Re67qkoUXww92/9aR44E6FzukbdBEiIsLGW0i+fQYDYoH7wbvuA62fruiQ7MECNq85Q14wuQEFaz4BWG8wUJ8zJ4WDGfQmFdRZWhBz2yz1FAhaK8hpadsFI0TzELKCEO+l0jb0lHiFBWyGiWlVOKeI3rzMCXLX9u3YMZZEB1Mfq6+mqUZP0tSsnCjD5odqSfMeguvrfWLlJs6dLLMgpgXBRzcOsBRULBoMaOvrbG0VFb4ygAgMcBQLJTR2Kgn/6hi29v9jROs3IeFS4RIiKGe1wb5H1XY1F1NovPaz4MzGgcDxqdMRyMacJiGT4PnRtsaNreVIUZZCQpUox8ub+/R10JZvSBBgImg+gdGIAv7t5wQi/0OImIWwvOwwqDXX1FSoy4AkmqvK+6+urdABB0yQV5Dc2OZDn66e4j4ND3IdOIRult7X689d0TT2EGmUm6ZLy6+upVAPAPFIPCjD5GvGZktIZgeQ0cbdeJXefJoMp4eofPNbx4qAAzKIAqRUGxE9Kgu1EUxH7WzayXak7q6qs/AIAb/LN/KYY8WkgzXRwr9Dq10HDCAG567CUCx4v9bT2FUn9HCVQnSuWv5n1vybEW+1+7e4Z6Gl9qyMEqjgiDooIfAUAmZvQxfviMvKb9DAEtXRcjAf3tPTua32q+DbtYIVQlCkqKsE3N+N348sHOvjePvXHsbuwCH77lmQ2hvGZwWAt2y0WvQavOqK85f4YeOLTtYAZ2gYKoZp7izeXKtT6JGSKI/tXWONAuq0IAOIUZfSBB0EDA33ShBG80r7l6Mf8frLLCqEYUY7rpE0JPSib0cjT7IVY4Dt+kEwnzm2CTTjRcRvOZIc9Fh8rO0iqS1BcKVYhStrrsbkuuTXIzKEexnMAKH2CGINTWOF4AgCJfTEaSNJMIwsVWPe4xJ1WIYs5Kexkr9OE6O/BwtKMin9egWTnyAhargB7MRWeJe6eb8KJUrK3YQ5p0kot/w93Orua3Wl7ADBFSW+N4r7bGgYZZX4W4IpRNERJaFJTolpZvX4YZfHMHatBzJWYIArpX8c2Fq6SstTUOtAqA7uUZZ/LU1jhkO50oUhJaFNvUjF1YoY+Bjt6XI222yu8tfyl9ZtZXueWX/XfpluXi3LvnvjG+Tm2NY09tjcMMAB8HNFl3YTeLAwk7T6m4v/J/aXm2H2MGAKAGPRHPHdDm0/SZ2WO2YQs8Lw60964IFqTyrT5PQ0Jhxjgwadks97xSctPUQtMO5wDXse22I2PmGRVrKyqDCYIeqPuC66eYQQI0t8koysZiH1qC0IiCiJolyYeOBgIAEJclFSkmrflCguj0WjIrV1+8ZWcVf++rpaMPz2g3fw0a6cn30FnnR8E+4eMxZVp2BtunwjOcAytMECal+Xrwr2WHs/MM2Lyjv5fp2L2faCDt1huwi9A61YBn2PHcwYhOd0CLlhmFOc9jBnQfF8U6th5I2DTXuHtKXX11upQgiIws/YzKeYYbgjgJuHuHfokVSoCaLWtB+lbc4rtPj+sRrDCBiLsoP7R7QgaJiqdw8KNqD1hNY1dChs4Nft38Tst72AUSGNPN7wXbp4LCubHMbeJB3EXhebELKxwHWn+6qoqCiiLG27UInCCc3t9+PVZRAnSYgSXXugS3jCzJ0E5Kkc2jchJ3UV5b0/wsz0XWkc3M5+CaRR64uooSV92cfwVWQQJLvu1tvHSEwc6+zfEKVMXCpIy+vtgr9rERZvqg1FSbFYi51badaICAVQigYm3FZ3qLQfKsFBTOjUd8XQ7iLgqazFFkWtZn+8xwrldyJT4oaICw+dP57F0vzl43vg5aRrHk2a6RutY7t+kdisjTEoG4DolHJnM5bVpSO/phsJkFuGIuDQZ9dP8HGj5vveXITP/rhRuXDOtMOjNWcRLCubESV1Eq1lYcCrZZtHQGI866jAs2GpZE4EWx46R72/5WU7k5M+1aqTq0i3I6th6wY4YERnLYqAS+yZykIIjmDr2m8xwJC0tosKdF9kHREhpN4WzLbzvdRnC6MTOIgoiW96/DDAlO3DxlUe0SOtLNokVTWJgzgw0MNIWltUuHkrhBDMiNQHObpu1Nsu9zV5q4iIJ270a7WRSNuhaV0JBllwynS4KSHr47bvAeJcgzPLf/qW+CprEmMoo3X96T6Ypzot69i9JI9x41wpRsDuYVMyCdMjEWNOlcOZ+Cjm4SWJenE6ugEhT3lAUbFrn0FkPMR8QuLKHFgiw+qjR5jhX4rjbPra/f3/I+ZkxgFBWlbHXZB7apGbIta2RaBVhUSoNeF93/3HueOTk+ZpPIKCYKmsyhEGyweEYslBUyYlFBdJtL1CSMYjN6g930tlIHoR1t12s+P2j07jGJFI4TTivxvyiBIp7iDefm2xsxgwKg4fPcGWywQKUXjhP5TdceUs1BDop4iiiKIc+Ll5O2Mzr4wmGEfldwVdpbhtdjhQmMIqJoSWIxVqggbloLe5pM0HhSDzQTkNooApztpP791gOtQTMsExFFXJrQk1lYYRzo7Ca9P9re7s3lcwgPit2oSQw/SXfa6sju3ROSWybUQlKdIamWcG84lOnoBcGFFcYBtYR7w6GIKOwwcxArVBg1hXvDoYgoHMVuwwoVBGXgqyncGw5FREFppRzNUf7X/lMelCKaDHw1oFhHzzg9oyMgLrrF3ahAGfgt77T+WrE/MAkoJkrjHxqfLcyX3LkmG95mK8IMfDWhmCgP/738eHkRG/YLx2LBdXpgl1IHoU0miomSka0vRb/nz2K8cRC5YYZoz7E3j0tmsKgdRURZ+/qcMWtNyyoomJ4b++FnflCzNdztnJStb/EgbjP6ebNoWFxKjzlCcKK4zgz+KdIMfDWizCqxFka/uz0wXJOXyaNkbW/i9kRAHoLO3Ap1DksyoFg4+JF/VdHpdo03z4vnAYhx2SgoHQh9OXKvkxg9ujYU6AxgZ2ffz0591BUyyTsZUEQUlDOcU5x58spqnrBZwnfyXedJ6BnUwukLhCCCxuu9AssLjJtxMi5qN1ohSMZRVjAUWbpH3/gjEDriy0adNw21ICu0K6Bhs4GjHf+87+gCzHgJIrunLHmosm7aLPPGngFi9IAzlFCHhsbBjtCkKYHdfH1D0nz/SawEeUwTJ3+66cHTF0iwBjRbZ3pI+PRbMzR8r/ceCRiIa4C9cGjvwOUJ/ZTijKyesnTL8idNeuEJrVYDWq04+sUAMJJMIWo0Go3A8mBheu8snUUs2n7PcWzzTwoZRVm5YW5tXqHtaYbTeI+VDQY6I/7Iq0fifgiNmpCv+bLaN6NRVGA2iR+/8GhpJCVIeGQRZfkjFcfzc0TyshwOpDaYanyZcsm8NCInsoiSnm8qQak9FKOBYY/0LZ0/9O9L5qUROZF+glHCDNEN0/M4cHvwpgtt/uFpTmDdzC2YMYUksoiya1NjdWc3WeVhtKP5w9npPExFzRmnQUskHydTuFZpZJ88omExAKw3GUQ7ywEMnnF1HX7l8HSsYoqgyD55/GbTHiTKfAvJMllGiovmnMcUAAAA/wfXp5a65hxQZAAAAABJRU5ErkJggg==" alt="" class="plot-icon">
+            <p class="plot-text">Przyłącze energetyczne</p>
+          </div>
+          <div class="plot-box">
+            <img src="data:image/png;base64,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" alt="" class="plot-icon">
+            <p class="plot-text">Bezpieczny zakup potwierdzony aktem notarialnym oraz nieobciążoną księgą wieczystą</p>
+          </div>
+          <div class="plot-box">
+            <img src="data:image/png;base64,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" alt="" class="plot-icon">
+            <p class="plot-text">Przyłącze wody</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plot-map-section" id="plot-map-section">
+      <div class="wrapper title-wrapper">
+        <h2 class="title">mapa działek</h2>
+      </div>
+      <div class="plot-map">
+
+        <svg id="plot-map-svg" viewBox="0 0 1920 1180.58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_1_3)">
+            <path d="M682.64 82.36L682.26 86.19L674.68 78.83L676.91 76.8L682.64 82.36Z" fill="#38813B" />
+            <path d="M699.98 87.36L699.69 90.35L691.43 89.47L691.73 86.47L699.98 87.36Z" fill="#38813B" />
+            <path d="M717.63 89.24L717.33 92.24L709.08 91.35L709.37 88.36L717.63 89.24Z" fill="#38813B" />
+            <path d="M735.28 91.13L734.99 94.12L726.72 93.24L727.02 90.25L735.28 91.13Z" fill="#38813B" />
+            <path d="M752.93 93.02L752.63 96.01L744.38 95.13L744.67 92.14L752.93 93.02Z" fill="#38813B" />
+            <path d="M770.62 94.91L770.33 97.9L762.02 97.02L762.32 94.02L770.62 94.91Z" fill="#38813B" />
+            <path d="M789.21 96.9L788.91 99.89L779.72 98.91L780.02 95.92L789.21 96.9Z" fill="#38813B" />
+            <path d="M798.6 97.9L806.86 98.79L806.57 101.78L798.31 100.9L798.6 97.9Z" fill="#38813B" />
+            <path d="M816.26 99.79L824.51 100.67L824.21 103.67L815.96 102.78L816.26 99.79Z" fill="#38813B" />
+            <path d="M833.9 101.68L842.15 102.56L841.86 105.55L833.61 104.67L833.9 101.68Z" fill="#38813B" />
+            <path d="M851.55 103.57L859.81 104.45L859.52 107.44L851.25 106.56L851.55 103.57Z" fill="#38813B" />
+            <path d="M869.2 105.45L877.46 106.34L877.16 109.33L868.91 108.45L869.2 105.45Z" fill="#38813B" />
+            <path d="M886.85 107.34L894.62 108.17L894.32 111.17L886.55 110.33L886.85 107.34Z" fill="#38813B" />
+            <path d="M904.01 109.18L913.2 110.16L912.91 113.15L903.72 112.17L904.01 109.18Z" fill="#38813B" />
+            <path d="M922.6 111.16L930.86 112.05L930.56 115.04L922.3 114.16L922.6 111.16Z" fill="#38813B" />
+            <path d="M940.25 113.05L948.5 113.94L948.21 116.93L939.95 116.05L940.25 113.05Z" fill="#38813B" />
+            <path d="M957.9 114.94L966.15 115.82L965.86 118.82L957.6 117.93L957.9 114.94Z" fill="#38813B" />
+            <path d="M975.21 116.79L983.8 117.71L983.51 120.7L974.92 119.79L975.21 116.79Z" fill="#38813B" />
+            <path d="M993.2 118.72L1001.45 119.6L1001.16 122.59L992.9 121.71L993.2 118.72Z" fill="#38813B" />
+            <path d="M1019.67 124.57L1010.55 123.6L1010.84 120.6L1017.19 121.28L1019.67 124.57Z" fill="#38813B" />
+            <path
+              d="M1020.26 121.61L1019.94 124.59V124.6L1019.86 124.59L1019.79 124.58L1019.67 124.57L1017.19 121.28L1020.26 121.61Z"
+              fill="#38813B" />
+            <path
+              d="M1333.82 972.84V941.584H1344.9C1356 941.584 1361.55 946.662 1361.55 956.819C1361.55 961.687 1360.03 965.574 1356.99 968.481C1353.97 971.387 1349.94 972.84 1344.9 972.84H1333.82ZM1340.86 947.316V967.129H1344.35C1347.4 967.129 1349.79 966.214 1351.52 964.383C1353.27 962.552 1354.14 960.06 1354.14 956.907C1354.14 953.928 1353.27 951.588 1351.55 949.888C1349.83 948.173 1347.42 947.316 1344.31 947.316H1340.86ZM1379.95 973.385C1375.47 973.385 1371.82 971.932 1369 969.026C1366.19 966.105 1364.78 962.305 1364.78 957.626C1364.78 952.685 1366.21 948.689 1369.07 945.638C1371.93 942.586 1375.73 941.06 1380.45 941.06C1384.91 941.06 1388.51 942.521 1391.26 945.442C1394.02 948.362 1395.4 952.213 1395.4 956.994C1395.4 961.905 1393.97 965.865 1391.11 968.873C1388.26 971.881 1384.54 973.385 1379.95 973.385ZM1380.25 947.12C1377.78 947.12 1375.82 948.05 1374.37 949.91C1372.91 951.755 1372.19 954.204 1372.19 957.255C1372.19 960.351 1372.91 962.799 1374.37 964.601C1375.82 966.403 1377.72 967.304 1380.08 967.304C1382.5 967.304 1384.43 966.432 1385.85 964.688C1387.28 962.93 1387.99 960.496 1387.99 957.386C1387.99 954.146 1387.3 951.625 1385.92 949.823C1384.54 948.021 1382.65 947.12 1380.25 947.12ZM1399.17 971.641V964.666C1400.44 965.727 1401.81 966.526 1403.29 967.064C1404.77 967.587 1406.27 967.849 1407.78 967.849C1408.67 967.849 1409.44 967.769 1410.09 967.609C1410.76 967.449 1411.31 967.231 1411.75 966.955C1412.2 966.664 1412.53 966.33 1412.75 965.952C1412.97 965.56 1413.08 965.139 1413.08 964.688C1413.08 964.078 1412.9 963.533 1412.55 963.053C1412.21 962.574 1411.73 962.131 1411.12 961.724C1410.52 961.317 1409.81 960.925 1408.98 960.547C1408.15 960.169 1407.26 959.784 1406.3 959.391C1403.86 958.374 1402.03 957.132 1400.83 955.664C1399.64 954.197 1399.04 952.424 1399.04 950.346C1399.04 948.718 1399.37 947.323 1400.02 946.161C1400.68 944.984 1401.56 944.018 1402.68 943.262C1403.81 942.506 1405.12 941.954 1406.6 941.605C1408.09 941.242 1409.66 941.06 1411.31 941.06C1412.94 941.06 1414.38 941.162 1415.63 941.366C1416.89 941.555 1418.05 941.852 1419.12 942.259V948.776C1418.59 948.413 1418.02 948.094 1417.39 947.817C1416.78 947.541 1416.15 947.316 1415.5 947.142C1414.84 946.953 1414.19 946.815 1413.54 946.728C1412.9 946.64 1412.29 946.597 1411.7 946.597C1410.9 946.597 1410.18 946.677 1409.52 946.837C1408.87 946.982 1408.32 947.193 1407.87 947.469C1407.42 947.745 1407.07 948.079 1406.82 948.471C1406.57 948.849 1406.45 949.278 1406.45 949.757C1406.45 950.28 1406.59 950.753 1406.87 951.174C1407.14 951.581 1407.53 951.973 1408.04 952.351C1408.55 952.714 1409.17 953.078 1409.9 953.441C1410.62 953.79 1411.44 954.153 1412.36 954.531C1413.61 955.054 1414.73 955.613 1415.71 956.209C1416.72 956.79 1417.57 957.452 1418.29 958.193C1419 958.934 1419.54 959.784 1419.92 960.743C1420.3 961.687 1420.49 962.792 1420.49 964.056C1420.49 965.8 1420.15 967.267 1419.49 968.459C1418.83 969.636 1417.94 970.595 1416.8 971.336C1415.67 972.063 1414.35 972.586 1412.84 972.905C1411.34 973.225 1409.76 973.385 1408.09 973.385C1406.37 973.385 1404.74 973.24 1403.18 972.949C1401.64 972.658 1400.3 972.222 1399.17 971.641ZM1447.58 947.316H1438.67V972.84H1431.6V947.316H1422.73V941.584H1447.58V947.316ZM1470.53 972.84H1451.79V941.584H1469.81V947.316H1458.83V954.269H1469.05V959.98H1458.83V967.129H1470.53V972.84ZM1468.27 981.559C1467.92 981.675 1467.5 981.769 1467 981.842C1466.52 981.929 1466.03 981.973 1465.52 981.973C1464.29 981.973 1463.3 981.646 1462.56 980.992C1461.81 980.353 1461.44 979.415 1461.44 978.18C1461.44 977.73 1461.52 977.257 1461.68 976.763C1461.84 976.284 1462.08 975.804 1462.38 975.325C1462.69 974.86 1463.06 974.417 1463.51 973.995C1463.97 973.574 1464.48 973.189 1465.06 972.84H1468.44C1467.31 973.668 1466.46 974.475 1465.91 975.259C1465.37 976.059 1465.11 976.763 1465.11 977.374C1465.11 977.853 1465.23 978.209 1465.48 978.442C1465.72 978.689 1466.06 978.812 1466.48 978.812C1466.76 978.812 1467.05 978.791 1467.35 978.747C1467.66 978.703 1467.95 978.638 1468.24 978.551L1468.27 981.559ZM1482.59 962.072V972.84H1475.55V941.584H1486.58C1494.45 941.584 1498.39 944.904 1498.39 951.545C1498.39 954.683 1497.26 957.226 1494.99 959.174C1492.74 961.106 1489.72 962.072 1485.94 962.072H1482.59ZM1482.59 946.989V956.732H1485.36C1489.1 956.732 1490.98 955.09 1490.98 951.806C1490.98 948.595 1489.1 946.989 1485.36 946.989H1482.59ZM1531.08 972.84H1523.98L1511.1 953.201C1510.34 952.053 1509.82 951.189 1509.53 950.607H1509.44C1509.56 951.712 1509.61 953.397 1509.61 955.664V972.84H1502.97V941.584H1510.55L1522.95 960.612C1523.52 961.469 1524.04 962.319 1524.52 963.162H1524.61C1524.49 962.436 1524.44 961.004 1524.44 958.868V941.584H1531.08V972.84ZM1551.44 973.385C1546.97 973.385 1543.32 971.932 1540.5 969.026C1537.68 966.105 1536.27 962.305 1536.27 957.626C1536.27 952.685 1537.7 948.689 1540.57 945.638C1543.43 942.586 1547.22 941.06 1551.94 941.06C1556.41 941.06 1560.01 942.521 1562.76 945.442C1565.52 948.362 1566.9 952.213 1566.9 956.994C1566.9 961.905 1565.47 965.865 1562.6 968.873C1559.75 971.881 1556.03 973.385 1551.44 973.385ZM1551.75 947.12C1549.28 947.12 1547.32 948.05 1545.86 949.91C1544.41 951.755 1543.68 954.204 1543.68 957.255C1543.68 960.351 1544.41 962.799 1545.86 964.601C1547.32 966.403 1549.22 967.304 1551.57 967.304C1554 967.304 1555.93 966.432 1557.35 964.688C1558.77 962.93 1559.49 960.496 1559.49 957.386C1559.49 954.146 1558.8 951.625 1557.41 949.823C1556.03 948.021 1554.15 947.12 1551.75 947.12ZM1570.67 971.641V964.666C1571.93 965.727 1573.3 966.526 1574.79 967.064C1576.27 967.587 1577.77 967.849 1579.28 967.849C1580.16 967.849 1580.93 967.769 1581.59 967.609C1582.26 967.449 1582.81 967.231 1583.24 966.955C1583.69 966.664 1584.03 966.33 1584.25 965.952C1584.46 965.56 1584.57 965.139 1584.57 964.688C1584.57 964.078 1584.4 963.533 1584.05 963.053C1583.7 962.574 1583.22 962.131 1582.61 961.724C1582.02 961.317 1581.3 960.925 1580.48 960.547C1579.65 960.169 1578.75 959.784 1577.79 959.391C1575.35 958.374 1573.53 957.132 1572.32 955.664C1571.13 954.197 1570.54 952.424 1570.54 950.346C1570.54 948.718 1570.86 947.323 1571.52 946.161C1572.17 944.984 1573.06 944.018 1574.18 943.262C1575.31 942.506 1576.62 941.954 1578.1 941.605C1579.58 941.242 1581.15 941.06 1582.81 941.06C1584.44 941.06 1585.87 941.162 1587.12 941.366C1588.39 941.555 1589.55 941.852 1590.61 942.259V948.776C1590.09 948.413 1589.51 948.094 1588.89 947.817C1588.28 947.541 1587.65 947.316 1586.99 947.142C1586.34 946.953 1585.69 946.815 1585.03 946.728C1584.39 946.64 1583.78 946.597 1583.2 946.597C1582.4 946.597 1581.67 946.677 1581.02 946.837C1580.37 946.982 1579.81 947.193 1579.36 947.469C1578.91 947.745 1578.57 948.079 1578.32 948.471C1578.07 948.849 1577.95 949.278 1577.95 949.757C1577.95 950.28 1578.09 950.753 1578.36 951.174C1578.64 951.581 1579.03 951.973 1579.54 952.351C1580.05 952.714 1580.66 953.078 1581.39 953.441C1582.12 953.79 1582.94 954.153 1583.85 954.531C1585.1 955.054 1586.22 955.613 1587.21 956.209C1588.21 956.79 1589.07 957.452 1589.78 958.193C1590.5 958.934 1591.04 959.784 1591.42 960.743C1591.8 961.687 1591.98 962.792 1591.98 964.056C1591.98 965.8 1591.65 967.267 1590.98 968.459C1590.33 969.636 1589.43 970.595 1588.3 971.336C1587.17 972.063 1585.85 972.586 1584.33 972.905C1582.84 973.225 1581.25 973.385 1579.58 973.385C1577.87 973.385 1576.23 973.24 1574.68 972.949C1573.14 972.658 1571.8 972.222 1570.67 971.641ZM1587.69 931.644L1580.87 938.685H1575.9L1581.57 931.644H1587.69ZM1619.54 971.728C1617.25 972.833 1614.28 973.385 1610.6 973.385C1605.8 973.385 1602.03 971.975 1599.29 969.156C1596.54 966.337 1595.17 962.581 1595.17 957.888C1595.17 952.889 1596.71 948.835 1599.79 945.725C1602.88 942.615 1606.89 941.06 1611.82 941.06C1614.87 941.06 1617.44 941.446 1619.54 942.216V948.994C1617.44 947.745 1615.06 947.12 1612.39 947.12C1609.45 947.12 1607.08 948.043 1605.28 949.888C1603.48 951.734 1602.58 954.233 1602.58 957.386C1602.58 960.409 1603.43 962.821 1605.13 964.623C1606.83 966.41 1609.12 967.304 1611.99 967.304C1614.74 967.304 1617.25 966.635 1619.54 965.298V971.728ZM1618.82 931.644L1611.99 938.685H1607.02L1612.69 931.644H1618.82Z"
+              fill="#94D231" />
+            <path d="M583.685 173.917L581.128 174.65L644.155 394.452L646.712 393.719L583.685 173.917Z" fill="#38813B" />
+            <path d="M382.812 177.504L380.343 178.492L445.646 341.68L448.116 340.692L382.812 177.504Z" fill="#38813B" />
+            <path
+              d="M640.61 1112.57L631.2 1081.99L612.43 1049.72L552.89 978.39L456.4 894.34L424.88 810.49V505.44L414.27 415.22L388.32 325L378.9 302.62L381.35 301.59L390.86 324.19L416.88 414.7L416.9 414.81L427.54 505.29V810.01L458.65 892.78L554.8 976.53L554.86 976.61L614.61 1048.19L614.67 1048.29L633.66 1080.92L643.15 1111.79L640.61 1112.57Z"
+              fill="#38813B" />
+            <path
+              d="M605.14 1112.5L599.27 1089.01L585.81 1062.09L524.49 987.22L444.67 907.99L444.59 907.87L401.34 840.33L401.29 840.12L392.39 805.12V804.96C392.34 801.66 387.18 474.56 378.83 436.53L381.43 435.96C389.8 474.12 394.81 789.19 395.05 804.76L403.82 839.27L446.76 906.32L526.47 985.42V985.47L588.01 1060.63L588.08 1060.76L601.74 1088.07V1088.21L607.65 1111.85L605.14 1112.5Z"
+              fill="#38813B" />
+            <path d="M386.555 537.779L366.838 546.096L367.871 548.547L387.589 540.23L386.555 537.779Z" fill="#38813B" />
+            <path d="M370.526 795.389L369.647 797.9L393.281 806.172L394.16 803.661L370.526 795.389Z" fill="#38813B" />
+            <path d="M361.065 836.712L360.952 839.37L402.514 841.141L402.627 838.483L361.065 836.712Z" fill="#38813B" />
+            <path d="M653.139 987.877L650.598 988.665L688.711 1111.56L691.252 1110.77L653.139 987.877Z"
+              fill="#38813B" />
+            <path
+              d="M896.1 1113.29L894.64 1111.07L1119.52 963.93L1130.42 1065.62L1117.05 1112.54L1114.49 1111.82L1127.72 1065.38L1117.34 968.54L896.1 1113.29Z"
+              fill="#38813B" />
+            <path d="M1128.5 1064.28L1029.23 1110.97L1030.36 1113.38L1129.63 1066.69L1128.5 1064.28Z" fill="#38813B" />
+            <path
+              d="M1281.35 226.39L1279.34 228.13L1278.08 226.66L1195.22 130.49L1019.94 124.59H1019.86L1019.79 124.58H1019.68L1019.67 124.57L1017.19 121.28L972.02 61.44L974.15 59.84L1021.04 121.96L1196.48 127.87L1281.32 226.36L1281.35 226.39Z"
+              fill="#38813B" />
+            <path
+              d="M1034.31 970.42L653.53 989.13L650.79 989.26H650.45C650.45 989.26 636.3 974.54 617.05 954.39L694.73 919.39L686.8 802.16L713.55 797.8L721.55 948.46L954.55 935.07L955.34 935.02L978.34 902.69L882.9 589.25L914.13 580.2L1034.31 970.42Z"
+              fill="#D8D8D8" />
+            <path
+              d="M1351.64 1015.97L1347.11 1032.03H1344.9L1341.6 1020.29C1341.46 1019.79 1341.37 1019.25 1341.34 1018.66H1341.3C1341.25 1019.21 1341.15 1019.75 1341 1020.27L1337.68 1032.03H1335.49L1330.79 1015.97H1332.86L1336.28 1028.29C1336.42 1028.8 1336.51 1029.34 1336.55 1029.9H1336.6C1336.64 1029.51 1336.76 1028.97 1336.95 1028.29L1340.5 1015.97H1342.3L1345.71 1028.38C1345.83 1028.8 1345.92 1029.31 1345.98 1029.88H1346.02C1346.05 1029.49 1346.15 1028.98 1346.32 1028.33L1349.6 1015.97H1351.64ZM1360.51 1032.3C1358.23 1032.3 1356.41 1031.55 1355.04 1030.05C1353.67 1028.55 1352.99 1026.6 1352.99 1024.19C1352.99 1021.61 1353.68 1019.55 1355.08 1018.01C1356.48 1016.47 1358.38 1015.7 1360.78 1015.7C1363 1015.7 1364.78 1016.45 1366.13 1017.94C1367.49 1019.44 1368.17 1021.39 1368.17 1023.8C1368.17 1026.42 1367.48 1028.49 1366.09 1030.01C1364.7 1031.54 1362.84 1032.3 1360.51 1032.3ZM1360.65 1017.41C1358.96 1017.41 1357.59 1018.01 1356.54 1019.23C1355.48 1020.45 1354.96 1022.05 1354.96 1024.02C1354.96 1026 1355.47 1027.6 1356.49 1028.8C1357.52 1030.01 1358.86 1030.61 1360.51 1030.61C1362.27 1030.61 1363.66 1030.03 1364.68 1028.88C1365.69 1027.73 1366.2 1026.12 1366.2 1024.06C1366.2 1021.94 1365.71 1020.3 1364.72 1019.14C1363.74 1017.98 1362.38 1017.41 1360.65 1017.41ZM1379.66 1032.03H1371.33V1015.97H1373.21V1030.33H1379.66V1032.03ZM1395.07 1032.03H1392.76L1384.5 1019.23C1384.29 1018.91 1384.12 1018.57 1383.98 1018.22H1383.92C1383.97 1018.57 1384 1019.3 1384 1020.43V1032.03H1382.12V1015.97H1384.56L1392.6 1028.57C1392.94 1029.09 1393.16 1029.45 1393.25 1029.64H1393.3C1393.22 1029.18 1393.19 1028.39 1393.19 1027.28V1015.97H1395.07V1032.03ZM1411.71 1032.03H1409.63L1407.92 1027.53H1401.12L1399.51 1032.03H1397.42L1403.58 1015.97H1405.53L1411.71 1032.03ZM1407.31 1025.84L1404.79 1019C1404.71 1018.77 1404.62 1018.41 1404.54 1017.92H1404.5C1404.42 1018.38 1404.34 1018.73 1404.24 1019L1401.74 1025.84H1407.31Z"
+              fill="#11330B" />
+            <path
+              d="M1344.12 1073.15H1341.88L1339.19 1068.65C1338.94 1068.23 1338.7 1067.88 1338.47 1067.58C1338.24 1067.29 1338 1067.04 1337.76 1066.86C1337.52 1066.67 1337.26 1066.54 1336.97 1066.45C1336.7 1066.36 1336.38 1066.32 1336.03 1066.32H1334.49V1073.15H1332.61V1057.09H1337.4C1338.1 1057.09 1338.75 1057.18 1339.34 1057.36C1339.93 1057.53 1340.45 1057.8 1340.88 1058.16C1341.32 1058.51 1341.66 1058.96 1341.91 1059.5C1342.16 1060.03 1342.28 1060.65 1342.28 1061.37C1342.28 1061.93 1342.19 1062.44 1342.02 1062.91C1341.86 1063.38 1341.62 1063.79 1341.31 1064.16C1341 1064.52 1340.63 1064.84 1340.19 1065.1C1339.75 1065.35 1339.26 1065.55 1338.72 1065.69V1065.74C1338.99 1065.86 1339.22 1065.99 1339.41 1066.15C1339.62 1066.3 1339.81 1066.48 1339.98 1066.69C1340.16 1066.9 1340.34 1067.14 1340.51 1067.41C1340.69 1067.67 1340.89 1067.97 1341.1 1068.32L1344.12 1073.15ZM1334.49 1058.79V1064.62H1337.04C1337.51 1064.62 1337.94 1064.55 1338.34 1064.4C1338.74 1064.26 1339.09 1064.06 1339.38 1063.8C1339.67 1063.53 1339.9 1063.21 1340.06 1062.83C1340.23 1062.44 1340.31 1062 1340.31 1061.53C1340.31 1060.67 1340.03 1060 1339.47 1059.52C1338.92 1059.04 1338.11 1058.79 1337.06 1058.79H1334.49ZM1354.84 1073.15H1346.33V1057.09H1354.49V1058.79H1348.22V1064.14H1354.02V1065.83H1348.22V1071.45H1354.84V1073.15ZM1368.42 1057.54L1359.01 1071.45H1368.19V1073.15H1356.2V1072.62L1365.53 1058.79H1356.95V1057.09H1368.42V1057.54ZM1379.53 1073.15H1371.01V1057.09H1379.17V1058.79H1372.9V1064.14H1378.7V1065.83H1372.9V1071.45H1379.53V1073.15ZM1394.13 1073.15H1391.89L1389.2 1068.65C1388.95 1068.23 1388.72 1067.88 1388.48 1067.58C1388.25 1067.29 1388.01 1067.04 1387.77 1066.86C1387.53 1066.67 1387.27 1066.54 1386.98 1066.45C1386.71 1066.36 1386.39 1066.32 1386.04 1066.32H1384.5V1073.15H1382.62V1057.09H1387.41C1388.11 1057.09 1388.76 1057.18 1389.35 1057.36C1389.94 1057.53 1390.46 1057.8 1390.89 1058.16C1391.33 1058.51 1391.68 1058.96 1391.92 1059.5C1392.17 1060.03 1392.29 1060.65 1392.29 1061.37C1392.29 1061.93 1392.21 1062.44 1392.03 1062.91C1391.87 1063.38 1391.63 1063.79 1391.32 1064.16C1391.01 1064.52 1390.64 1064.84 1390.2 1065.1C1389.76 1065.35 1389.28 1065.55 1388.73 1065.69V1065.74C1389 1065.86 1389.23 1065.99 1389.42 1066.15C1389.63 1066.3 1389.82 1066.48 1390 1066.69C1390.17 1066.9 1390.35 1067.14 1390.52 1067.41C1390.7 1067.67 1390.9 1067.97 1391.12 1068.32L1394.13 1073.15ZM1384.5 1058.79V1064.62H1387.05C1387.52 1064.62 1387.95 1064.55 1388.35 1064.4C1388.75 1064.26 1389.1 1064.06 1389.39 1063.8C1389.68 1063.53 1389.91 1063.21 1390.07 1062.83C1390.24 1062.44 1390.32 1062 1390.32 1061.53C1390.32 1060.67 1390.04 1060 1389.48 1059.52C1388.93 1059.04 1388.13 1058.79 1387.07 1058.79H1384.5ZM1415.38 1057.09L1410.85 1073.15H1408.64L1405.34 1061.41C1405.2 1060.91 1405.11 1060.37 1405.08 1059.78H1405.03C1404.99 1060.33 1404.89 1060.87 1404.74 1061.39L1401.42 1073.15H1399.23L1394.53 1057.09H1396.6L1400.02 1069.41C1400.16 1069.92 1400.25 1070.46 1400.29 1071.02H1400.34C1400.38 1070.63 1400.5 1070.09 1400.69 1069.41L1404.24 1057.09H1406.04L1409.45 1069.5C1409.57 1069.92 1409.66 1070.43 1409.72 1071H1409.76C1409.79 1070.61 1409.89 1070.1 1410.06 1069.45L1413.34 1057.09H1415.38ZM1430.21 1073.15H1428.13L1426.42 1068.65H1419.61L1418.01 1073.15H1415.92L1422.08 1057.09H1424.03L1430.21 1073.15ZM1425.81 1066.96L1423.29 1060.12C1423.21 1059.89 1423.12 1059.53 1423.04 1059.04H1423C1422.92 1059.5 1422.84 1059.85 1422.74 1060.12L1420.24 1066.96H1425.81ZM1443.51 1072.48C1442.32 1073.11 1440.85 1073.42 1439.08 1073.42C1436.79 1073.42 1434.96 1072.68 1433.59 1071.21C1432.22 1069.74 1431.53 1067.81 1431.53 1065.42C1431.53 1062.86 1432.3 1060.78 1433.85 1059.2C1435.39 1057.61 1437.35 1056.82 1439.73 1056.82C1441.25 1056.82 1442.51 1057.04 1443.51 1057.48V1059.49C1442.36 1058.85 1441.09 1058.53 1439.7 1058.53C1437.86 1058.53 1436.36 1059.14 1435.21 1060.37C1434.07 1061.6 1433.5 1063.25 1433.5 1065.31C1433.5 1067.27 1434.03 1068.83 1435.1 1069.99C1436.18 1071.15 1437.58 1071.73 1439.32 1071.73C1440.94 1071.73 1442.33 1071.37 1443.51 1070.65V1072.48ZM1450.89 1067.39C1450.89 1069.3 1450.49 1070.78 1449.68 1071.84C1448.88 1072.89 1447.8 1073.42 1446.45 1073.42C1445.82 1073.42 1445.3 1073.33 1444.9 1073.15V1071.29C1445.3 1071.58 1445.83 1071.73 1446.47 1071.73C1448.16 1071.73 1449.01 1070.29 1449.01 1067.42V1057.09H1450.89V1067.39ZM1467.41 1073.15H1465.33L1463.62 1068.65H1456.82L1455.21 1073.15H1453.12L1459.28 1057.09H1461.23L1467.41 1073.15ZM1463.01 1066.96L1460.49 1060.12C1460.41 1059.89 1460.32 1059.53 1460.24 1059.04H1460.2C1460.12 1059.5 1460.04 1059.85 1459.94 1060.12L1457.44 1066.96H1463.01Z"
+              fill="#11330B" />
+            <path
+              d="M1345.55 1114.27H1343.24L1334.98 1101.47C1334.77 1101.15 1334.6 1100.81 1334.46 1100.46H1334.4C1334.46 1100.81 1334.49 1101.54 1334.49 1102.67V1114.27H1332.61V1098.21H1335.05L1343.09 1110.81C1343.42 1111.33 1343.64 1111.69 1343.74 1111.88H1343.78C1343.71 1111.42 1343.67 1110.63 1343.67 1109.52V1098.21H1345.55V1114.27ZM1353.21 1098.21V1099.82H1351.64V1112.66H1353.21V1114.27H1348.19V1112.66H1349.76V1099.82H1348.19V1098.21H1353.21ZM1364.39 1114.27H1355.88V1098.21H1364.03V1099.91H1357.76V1105.26H1363.56V1106.95H1357.76V1112.57H1364.39V1114.27ZM1367.48 1114.27V1098.21H1371.91C1377.57 1098.21 1380.4 1100.82 1380.4 1106.04C1380.4 1108.52 1379.61 1110.51 1378.04 1112.02C1376.47 1113.52 1374.37 1114.27 1371.73 1114.27H1367.48ZM1369.36 1099.91V1112.57H1371.75C1373.86 1112.57 1375.5 1112 1376.67 1110.88C1377.84 1109.75 1378.43 1108.15 1378.43 1106.08C1378.43 1101.97 1376.24 1099.91 1371.87 1099.91H1369.36ZM1390.03 1114.54C1387.75 1114.54 1385.93 1113.79 1384.55 1112.29C1383.19 1110.79 1382.5 1108.84 1382.5 1106.43C1382.5 1103.85 1383.2 1101.79 1384.6 1100.25C1385.99 1098.71 1387.89 1097.94 1390.3 1097.94C1392.52 1097.94 1394.3 1098.69 1395.65 1100.18C1397.01 1101.68 1397.69 1103.63 1397.69 1106.04C1397.69 1108.66 1396.99 1110.73 1395.61 1112.25C1394.22 1113.78 1392.36 1114.54 1390.03 1114.54ZM1390.16 1099.65C1388.48 1099.65 1387.11 1100.25 1386.05 1101.47C1385 1102.69 1384.48 1104.28 1384.48 1106.26C1384.48 1108.24 1384.99 1109.84 1386.01 1111.04C1387.04 1112.25 1388.38 1112.85 1390.03 1112.85C1391.79 1112.85 1393.18 1112.27 1394.2 1111.12C1395.21 1109.97 1395.72 1108.36 1395.72 1106.3C1395.72 1104.18 1395.23 1102.54 1394.24 1101.38C1393.25 1100.22 1391.9 1099.65 1390.16 1099.65ZM1400.1 1113.62V1111.4C1400.35 1111.63 1400.65 1111.83 1401 1112.01C1401.36 1112.19 1401.74 1112.34 1402.12 1112.47C1402.52 1112.59 1402.91 1112.68 1403.31 1112.75C1403.71 1112.81 1404.07 1112.85 1404.41 1112.85C1405.56 1112.85 1406.43 1112.64 1406.99 1112.21C1407.57 1111.78 1407.86 1111.16 1407.86 1110.35C1407.86 1109.92 1407.76 1109.54 1407.57 1109.22C1407.38 1108.9 1407.12 1108.61 1406.78 1108.35C1406.45 1108.08 1406.05 1107.82 1405.58 1107.58C1405.13 1107.34 1404.64 1107.08 1404.11 1106.81C1403.55 1106.53 1403.02 1106.24 1402.54 1105.95C1402.05 1105.66 1401.63 1105.34 1401.27 1104.99C1400.91 1104.64 1400.63 1104.24 1400.42 1103.8C1400.22 1103.35 1400.12 1102.83 1400.12 1102.23C1400.12 1101.5 1400.28 1100.87 1400.6 1100.33C1400.92 1099.78 1401.34 1099.34 1401.87 1098.98C1402.39 1098.63 1402.98 1098.37 1403.65 1098.2C1404.32 1098.03 1405 1097.94 1405.7 1097.94C1407.28 1097.94 1408.43 1098.13 1409.16 1098.51V1100.63C1408.21 1099.97 1406.99 1099.65 1405.51 1099.65C1405.09 1099.65 1404.68 1099.69 1404.27 1099.78C1403.86 1099.86 1403.5 1100 1403.18 1100.19C1402.86 1100.39 1402.59 1100.64 1402.39 1100.94C1402.19 1101.25 1402.09 1101.62 1402.09 1102.06C1402.09 1102.47 1402.16 1102.83 1402.31 1103.13C1402.47 1103.43 1402.7 1103.7 1403 1103.95C1403.3 1104.19 1403.66 1104.43 1404.08 1104.66C1404.52 1104.89 1405.01 1105.15 1405.57 1105.42C1406.15 1105.71 1406.69 1106.01 1407.21 1106.32C1407.72 1106.63 1408.17 1106.98 1408.56 1107.36C1408.95 1107.74 1409.26 1108.16 1409.48 1108.63C1409.71 1109.09 1409.83 1109.62 1409.83 1110.22C1409.83 1111.01 1409.67 1111.68 1409.36 1112.23C1409.05 1112.78 1408.63 1113.22 1408.1 1113.56C1407.58 1113.91 1406.98 1114.15 1406.29 1114.3C1405.6 1114.46 1404.88 1114.54 1404.12 1114.54C1403.86 1114.54 1403.55 1114.52 1403.18 1114.47C1402.8 1114.43 1402.42 1114.37 1402.03 1114.29C1401.65 1114.22 1401.28 1114.12 1400.93 1114.01C1400.58 1113.89 1400.31 1113.76 1400.1 1113.62ZM1422.53 1099.91H1417.89V1114.27H1416.01V1099.91H1411.38V1098.21H1422.53V1099.91ZM1433.57 1114.27H1425.06V1098.21H1433.21V1099.91H1426.94V1105.26H1432.74V1106.95H1426.94V1112.57H1433.57V1114.27ZM1432.64 1114.27C1431.52 1115.32 1430.96 1116.16 1430.96 1116.77C1430.96 1117.29 1431.21 1117.55 1431.72 1117.55C1431.94 1117.55 1432.15 1117.5 1432.35 1117.41V1118.6C1432.12 1118.7 1431.82 1118.75 1431.43 1118.75C1430.86 1118.75 1430.41 1118.6 1430.06 1118.3C1429.72 1118 1429.55 1117.59 1429.55 1117.07C1429.55 1116.16 1430.13 1115.23 1431.31 1114.27H1432.64ZM1438.54 1108.2V1114.27H1436.66V1098.21H1441.07C1442.79 1098.21 1444.12 1098.63 1445.06 1099.47C1446.01 1100.3 1446.48 1101.48 1446.48 1103C1446.48 1104.53 1445.95 1105.77 1444.9 1106.74C1443.86 1107.72 1442.44 1108.2 1440.66 1108.2H1438.54ZM1438.54 1099.91V1106.5H1440.51C1441.81 1106.5 1442.8 1106.2 1443.48 1105.61C1444.16 1105.02 1444.51 1104.18 1444.51 1103.09C1444.51 1100.97 1443.25 1099.91 1440.75 1099.91H1438.54ZM1462.46 1114.27H1460.15L1451.89 1101.47C1451.68 1101.15 1451.51 1100.81 1451.37 1100.46H1451.31C1451.37 1100.81 1451.4 1101.54 1451.4 1102.67V1114.27H1449.51V1098.21H1451.96L1460 1110.81C1460.33 1111.33 1460.55 1111.69 1460.64 1111.88H1460.69C1460.62 1111.42 1460.58 1110.63 1460.58 1109.52V1098.21H1462.46V1114.27ZM1479.1 1114.27H1477.02L1475.31 1109.77H1468.51L1466.9 1114.27H1464.81L1470.97 1098.21H1472.92L1479.1 1114.27ZM1474.7 1108.08L1472.18 1101.24C1472.1 1101.01 1472.01 1100.65 1471.93 1100.16H1471.89C1471.81 1100.62 1471.73 1100.97 1471.63 1101.24L1469.13 1108.08H1474.7Z"
+              fill="#11330B" />
+            <path d="M1331.78 995.39H1609.93" stroke="#38813B" stroke-miterlimit="10" />
+            <path d="M1609.6 1013.61H1562.47V1030.13H1609.6V1013.61Z" fill="#85C831" />
+            <path d="M1609.6 1054.45H1562.47V1070.97H1609.6V1054.45Z" fill="#FFBF00" />
+            <path d="M1609.6 1095.3H1562.47V1111.82H1609.6V1095.3Z" fill="#FF4C20" />
+            <path data-id="t9" class="plot-area"
+              d="M1527.91 434.46L1505.76 520.43L1451.69 583.36L1386.29 642.91L1168.68 677.16L1118.32 511.25L1455.91 306.86L1512.85 362.67L1527.91 434.46Z"
+              fill="#85C831" />
+            <path data-id="t8" class="plot-area"
+              d="M1453.45 304.42L1117.32 507.97L1067.55 344.02L1167.77 270.79L1278.08 226.66L1280.08 225.88L1281.36 226.36C1294.34 231.2 1403.49 272.26 1453.45 304.42Z"
+              fill="#85C831" />
+            <path data-id="t7" class="plot-area"
+              d="M1381.83 646.98L1352.42 673.76L1119.61 964.77L1118.43 966.24L1115.79 966.37L1037.74 970.21L975.58 768.43L1176.51 708.74L1178.12 708.26L1169.65 680.37L1381.83 646.98Z"
+              fill="#85C831" />
+            <path data-id="t6" class="plot-area"
+              d="M1173.97 706.02L974.61 765.26L917.32 579.28L1117.83 521.11L1173.97 706.02Z" fill="#85C831" />
+            <path data-id="t5" class="plot-area"
+              d="M1116.87 517.94L881.97 586.08L821.4 387.08H1010.08L1064.7 346.08L1116.87 517.94Z" fill="#85C831" />
+            <path data-id="t4" class="plot-area"
+              d="M974.68 902.12L953.57 931.83L724.7 944.98L716.85 797.3V797.29L932.08 762.2L974.68 902.12Z"
+              fill="#85C831" />
+            <path data-id="t3" class="plot-area" d="M931.1 759L686.58 798.86L676.47 649.14L879.71 590.18L931.1 759Z"
+              fill="#85C831" />
+            <path data-id="t2" class="plot-area"
+              d="M691.26 917.33L614.61 951.86C577.32 912.86 522.99 855.75 513.07 843.93L487.66 779.52C487.66 779.52 484.07 740.8 481.06 705.82L673.2 650.08L691.26 917.33Z"
+              fill="#85C831" />
+            <path data-id="t1" class="plot-area"
+              d="M878.74 587.01L877.07 587.49L480.77 702.42L476.47 703.67C474.54 680.93 472.97 660.93 472.97 655.94C472.97 642.94 465.29 455.04 465.29 455.04L445.2 341.04H445.39L446.49 341.31L636.64 387.12H817.89L858.28 519.79L878.74 587.01Z"
+              fill="#85C831" />
+            <path
+              d="M534.81 567.42L487.73 451.22L540.64 426.77L590.44 542.42L534.81 567.42ZM491.14 452.57L536.24 563.85L586.97 541.03L539.28 430.33L491.14 452.57Z"
+              fill="#38813B" />
+          </g>
+          <defs>
+            <clipPath id="clip0_1_3">
+              <rect width="1920" height="1180.58" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery-section">
+      <div class="wrapper title-wrapper">
+        <h2 class="title">galeria</h2>
+      </div>
+      <div class="wrapper">
+        <div class="gallery-container">
+          <div class="gallery-item gallery-img-one"></div>
+          <div class="gallery-item gallery-img-two"></div>
+          <div class="gallery-item gallery-img-three"></div>
+          <div class="gallery-item gallery-img-four"></div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <form class="form" id="form" method="post">
+      <div class="form-header">
+        <h3 class="form-title">formularz kontaktowy</h3>
+      </div>
+      <div class="form-body">
+        <div class="wrapper">
+          <div class="form-content">
+            <label for="phone">Numer telefonu</label>
+            <input type="number" id="phone" name="phone" autocomplete="off">
+            <label for="email">Adres e-mail</label>
+            <input type="text" id="email" name="email" autocomplete="off">
+            <label for="plot-id">Numer działki</label>
+            <input type="number" id="plotId" name="plot-id" autocomplete="off">
+            <label for="description">*opis</label>
+            <textarea name="description" id="description" cols="30" rows="5" maxlength="1000"></textarea>
+            <button class="form-send-btn" id="form-send-btn">wyślij</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="footer-container">
+      <div class="footer-box">
+        <div class="footer-content footer-address">
+          <a href="#"><img src="/wilcza/assets/logo-white-wJlLrDqX.png" alt="Obrazek szczytu gór z napisem Wilcza Przełęcz"
+              class="footer-logo"></a>
+          <p class="footer-text">57-442 Wilcza, Przełęcz Wilcza</p>
+        </div>
+      </div>
+      <div class="footer-box">
+        <div class="footer-content">
+          <h4 class="footer-title footer-title-one">dane kontaktowe</h4>
+          <div class="footer-contact-data">
+            <img src="data:image/png;base64,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" alt="">
+            <a href="tel: 723 990 660">723 990 660</a>
+          </div>
+          <div class="footer-contact-data">
+            <img src="data:image/png;base64,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" alt="">
+            <a href="mailto: biuro@wilczaprzełęcz.pl">biuro@wilczaprzełęcz.pl</a>
+          </div>
+        </div>
+        <div class="footer-content">
+          <h4 class="footer-title footer-title-two">social media</h4>
+          <div class="footer-contact-data">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABnCAYAAADsSgd0AAAACXBIWXMAAC4jAAAuIwF4pT92AAABf0lEQVR4nO3dwWrCQBRA0Uno//9yCpYU29JSkbQnmXt2ulDx8jTMMLps2zbufLiRf7PsT7wWh/TeYg9UHM+tyVoc2rae+MVPoUC4AuEKhCsQrkC4AuEKhCsQrkC4AuEKhCsQrkC4AuEKhHuZ/Q34ZPlyz+8dsvE5e6BngvyJWQPxYXazBTpNmN1MFwmnizMmCnTKOKPLbN8MgU47PaMJ8l090KmnZzRBvgLhZl/q+QlxqKAJwhUIVyBcgXAFwhUIVyBcgXAFwhUIVyDcVdbijthWeOQxD1u3a4JwBcIVCFcgXIFwBXreoTuvBcIVCFcgXIFwV1nq+e6LmjvS+KgmCFcgXIFwBcIVCFcgXIFwBcIVCFcgXIFwBcIVCFcgXIFwBcIVCFcgXIFwBcIVCFcgXIFwBcIVCFcgXIFwBcIVCFcgXIFwBcIVCFcg3NV/eZ44xviMJghXIFyBcAXCFQhXIFyBcAXCFQi3XuGvLC9s2SeoSJ5bk/uPuCI53lqMMV4BjC0R3+s/fkgAAAAASUVORK5CYII=" alt="">
+            <a href="#">/wilczaprzelecz</a>
+          </div>
+          <div class="footer-contact-data">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABnCAYAAADov9dJAAAACXBIWXMAAC4jAAAuIwF4pT92AAAC00lEQVR4nO2d226DMBAFAfX/f5lKkUgpwQm+7jlh5q2pCs6O19jGdud1XacTTj+EYczHG/0cfkaQBpuHp7BlVywk6fF0solCki4PN4tp4e/GupBNHpBRJiDKBESZgCgTEGXCcWbiKi9THJBFdk+7JKOQVE92DGn64siSlSuKbAqCjDIBUSYgygREmVA6joLXsVDXjhai8kkNVl9en7eEpi+PlKQ9Xd7vIeo6OQKay0KUCYi6RvhyhW/oTFwNovX0l6Oo0to9tDvdGhdRPZqe/TU/SZujmz91UaOC03UM1ALlzkREDX53zxyJzYUrilo/BCzy/lcE3GJmIhWgCFJlSYmY3/yuGqVnVCowkayJ4J991hWVjFJe/y5RNgVRDpsUbj8z0ToAxyap5fVTzeAQIkW1COKVgWrLe4bJcp3rKw3W9nd2e8KinlGlgWrVBa65Tohkp9ccPZocG1kRokq+ZM/ngsUsukNGjQikvKzRonKzaWQAc+81tPnjVbwJyqIimiPeR33peRbDvpNqRkXWbMms4hllAqJMUBSl0PTINX9klAmIMgFRJiDKBNV1fXCAjDpHrrIgygRVUTR/B0aKctmPJFlJ2M1Rx7DKxzPqP7KVY7Qo5dfd0hnskFEjAqi2MuoFl6avpyyLHmaEKKVFjzUrdocSlVE1sloIq7kOmwQyKN3FbjuQjhTV4uyGK2dFtJSTukd3ojOq5UEbvbMldGZFodfnMLUUXkaV7rmyLImyKY2jFGXJlEltwKskS6risK7vHLnsVh1HRW2Kln1Wqg94RwmT73m6zEz0EmZzCqbbFFLtAR+258q6H/57m/9nxat4ExBlAqJMQJQJiDIBUSYgygREmYAoExBlQq4o9i0FQUbFkVXpS0SRVfVkx7B09hxZg6HpMwFRJiDKBESZgCgTEGXCcqcFIsbMW0YhS5eHm33Thyw9nk6Ozyhk6fDnYpqmX6v7XPUONbiaAAAAAElFTkSuQmCC" alt="">
+            <a href="#">@wilczaprzelecz</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-box">
+        <div class="footer-content">
+          <h4 class="footer-title footer-title-three">kategorie</h4>
+          <ul class="footer-category-list">
+            <li class="footer-category-item">
+              <a href="#">Strona główna</a>
+            </li>
+            <li class="footer-category-item">
+              <a href="#wolf-pass-section">Opis lokalizacji</a>
+            </li>
+            <li class="footer-category-item">
+              <a href="#localization-section">Mapa</a>
+            </li>
+            <li class="footer-category-item">
+              <a href="#plot-map-section">Mapa działek</a>
+            </li>
+            <li class="footer-category-item">
+              <a href="#">Uwagi</a>
+            </li>
+            <li class="footer-category-item">
+              <a href="#attractions-section">Atrakcje w okolicy</a>
+            </li>
+            <li class="footer-category-item">
+              <a href="#gallery-section">Galeria</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./assets/js/jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $(document).ready(function (e) {
+      $('img[usemap]').rwdImageMaps();
+    });
+  </script>
+  <script src="./assets/js/scrollreveal.min.js"></script>
+</body>
+
+</html>
