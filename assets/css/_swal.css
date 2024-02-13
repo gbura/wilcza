@@ -1,0 +1,30 @@
+.swal2-popup {
+	font-size: 1.4rem;
+}
+
+.swal2-confirm {
+	background-color: #bddc31 !important;
+	outline: none !important;
+	border: none !important;
+}
+
+.swal2-action button:focus {
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled) {
+	box-shadow: none !important;
+}
+
+.swal2-info {
+	border-color: #bddc31 !important;
+	color: #bddc31 !important;
+}
+
+@media (min-width: 768px) {
+	.swal2-popup {
+		font-size: 1.6rem;
+	}
+}
