@@ -3,6 +3,7 @@ import './assets/js/swiper'
 import './assets/js/validation'
 import './assets/js/mapTabs'
 import './assets/js/scrollReveal'
+import './assets/js/gallery'
 
 const menu = document.querySelector('.menu')
 const menuItems = document.querySelectorAll('.menu-item')
