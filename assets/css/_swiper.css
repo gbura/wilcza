@@ -89,4 +89,18 @@
 	.hero-subtitle {
 		font-size: 2rem;
 	}
+
+	.hero-img {
+		height: 500px;
+	}
+
+	.hero-img-one {
+		background-position: 0% 65%;
+	}
+	.hero-img-three {
+		background-position: 0% 20%;
+	}
+	.hero-img-five {
+		background-position: 0% 30%;
+	}
 }
