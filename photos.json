@@ -1,10 +1,8 @@
 {
 	"images": [
-		"./assets/images/photos/one.jpg",
-		"./assets/images/photos/two.jpg",
-		"./assets/images/photos/three.jpg",
-		"./assets/images/photos/four.jpg",
-		"./assets/images/photos/five.jpg",
-		"./assets/images/photos/six.jpg"
+		"./assets/images/photos/IMG_1503.png",
+		"./assets/images/photos/IMG_1504.png",
+		"./assets/images/photos/IMG_1511.png",
+		"./assets/images/photos/IMG_1514.png"
 	]
 }
