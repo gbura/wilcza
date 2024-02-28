@@ -39,7 +39,7 @@ const validatePhone = phoneInput => {
 }
 
 formSendBtn.addEventListener('click', e => {
-	e.preventDefault()
+	// e.preventDefault()
 
 	const isValidEmail = validateEmail(emailInput.value)
 	const isValidPhone = validatePhone(phone)
@@ -59,10 +59,13 @@ formSendBtn.addEventListener('click', e => {
 			icon: 'success',
 			text: 'Wysłano wiadomość',
 		}).then(() => {
-			document.getElementById('phone').value = ''
-			document.getElementById('email').value = ''
-			document.getElementById('plotId').value = ''
-			document.getElementById('description').value = ''
+			setTimeout(() => {
+				document.getElementById('form').submit()
+				document.getElementById('phone').value = ''
+				document.getElementById('email').value = ''
+				document.getElementById('plotId').value = ''
+				document.getElementById('description').value = ''
+			}, 1000)
 		})
 	}
 })
