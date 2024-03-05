@@ -796,7 +796,8 @@ footer::after {
 	}
 
 	.plot-tablet {
-		width: 90px;
+		width: 120px;
+		padding: 1rem 0;
 	}
 
 	.plot-tablet p {
@@ -821,9 +822,9 @@ footer::after {
 		padding: 0 15%;
 	}
 
-	.plot-tablet {
+	/* .plot-tablet {
 		width: 100px;
-	}
+	} */
 
 	.plate {
 		position: absolute;
@@ -884,6 +885,15 @@ footer::after {
 }
 
 @media (min-width: 1750px) {
+	.plot-tablet {
+		width: 140px;
+		padding: 1.5rem 0;
+	}
+
+	.plot-tablet p {
+		font-size: 1.4rem;
+	}
+
 	.footer-container {
 		padding: 4rem 15%;
 	}
