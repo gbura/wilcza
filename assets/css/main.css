@@ -221,12 +221,27 @@
 	width: 100%;
 }
 
+.plot-tablet {
+	position: absolute;
+	text-align: center;
+	background-color: var(--plate);
+	width: 15%;
+	border-radius: 4px;
+}
+
+.plot-tablet p {
+	font-size: 1.2rem;
+	color: var(--dark-green);
+	font-weight: bold;
+}
+
 .plate {
 	position: absolute;
 	width: 10%;
 }
+
 .t1 {
-	top: 34%;
+	top: 36%;
 	left: 30%;
 }
 .t2 {
@@ -234,26 +249,26 @@
 	left: 27%;
 }
 .t3 {
-	top: 50%;
+	top: 55%;
 	left: 37%;
 }
 .t4 {
 	bottom: 25%;
-	left: 40%;
+	left: 39%;
 }
 .t5 {
-	top: 30%;
+	top: 35%;
 }
 .t6 {
-	top: 45%;
-	left: 50%;
+	top: 48%;
+	left: 49%;
 }
 .t7 {
-	bottom: 30%;
-	left: 55%;
+	bottom: 28%;
+	left: 53%;
 }
 .t8 {
-	top: 20%;
+	top: 22%;
 	left: 60%;
 }
 .t9 {
@@ -590,6 +605,10 @@ footer::after {
 		width: 30%;
 	}
 
+	.plot-tablet {
+		width: 10%;
+	}
+
 	.gallery-container {
 		padding: 0 15%;
 		height: 600px;
@@ -709,6 +728,11 @@ footer::after {
 		padding: 0 10%;
 	}
 
+	.plate {
+		position: absolute;
+		width: 8%;
+	}
+
 	.gallery-container {
 		margin-bottom: 15rem;
 	}
@@ -771,6 +795,15 @@ footer::after {
 		width: 8%;
 	}
 
+	.plot-tablet {
+		width: 120px;
+		padding: 1rem 0;
+	}
+
+	.plot-tablet p {
+		font-size: 1.4rem;
+	}
+
 	.form {
 		right: 5%;
 	}
@@ -789,37 +822,46 @@ footer::after {
 		padding: 0 15%;
 	}
 
+	/* .plot-tablet {
+		width: 100px;
+	} */
+
+	.plate {
+		position: absolute;
+		width: 110px;
+	}
+
 	.t1 {
-		top: 30%;
+		top: 40%;
 		left: 35%;
 	}
 	.t2 {
-		left: 33%;
+		left: 34%;
 	}
 	.t3 {
-		top: 48%;
-		left: 40%;
-	}
-	.t4 {
+		top: 55%;
 		left: 41%;
 	}
+	.t4 {
+		left: 42%;
+	}
 	.t5 {
-		top: 25%;
+		top: 35%;
 	}
 	.t6 {
-		top: 42%;
-		left: 49%;
+		top: 50%;
+		left: 50%;
 	}
 	.t7 {
 		left: 52%;
 	}
 	.t8 {
-		top: 16%;
-		left: 55%;
+		top: 25%;
+		left: 57%;
 	}
 	.t9 {
+		top: 40%;
 		left: 60%;
-		top: 32%;
 	}
 
 	.footer-container {
@@ -843,6 +885,15 @@ footer::after {
 }
 
 @media (min-width: 1750px) {
+	.plot-tablet {
+		width: 140px;
+		padding: 1.5rem 0;
+	}
+
+	.plot-tablet p {
+		font-size: 1.4rem;
+	}
+
 	.footer-container {
 		padding: 4rem 15%;
 	}
